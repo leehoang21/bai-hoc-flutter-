@@ -35,11 +35,13 @@ class MyApp extends StatelessWidget {
           ],
         ),
         drawer: const Drawer(
-          child: Center(
-            child: Text(
-              'Drawer',
-              style: TextStyle(
-                fontSize: 50,
+          child: DrawerHeader(
+            child: Center(
+              child: Text(
+                'Drawer',
+                style: TextStyle(
+                  fontSize: 50,
+                ),
               ),
             ),
           ),
