@@ -1,0 +1,18 @@
+{
+    "q": "pasta",
+    "from": 0,
+    "to": 10,
+    "more": true,
+    "count": 33060,
+    "hits": [
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_09b4dbdf0c7244c462a4d2622d88958e",
+          "label": "Pasta Frittata Recipe",
+          "image": "https://www.edamam.com/web-img/5a5/5a5220b7a65c911a1480502ed0532b5c.jpg",
+          "source": "Food Republic",
+          "url": "http://www.foodrepublic.com/2012/01/21/pasta-frittata-recipe"
+        }
+      }
+    ]
+  }

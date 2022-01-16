@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "672766499071",
+    "project_id": "auth-pirebase",
+    "storage_bucket": "auth-pirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672766499071:android:06fcfcbaa5aade00ce54ca",
+        "android_client_info": {
+          "package_name": "com.example.auth_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672766499071-jbfc133mp5m8m6d3f6ul4k9tbg6vqea4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.auth_firebase",
+            "certificate_hash": "ac7ea986485a99bdbc4856a2d4b31e227abf9e2a"
+          }
+        },
+        {
+          "client_id": "672766499071-4rvushji4hlobad5v3fd0acm07cr8s0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTuWkdakbMR3MwD2rqUKsELo1yXDWCMwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672766499071-4rvushji4hlobad5v3fd0acm07cr8s0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
