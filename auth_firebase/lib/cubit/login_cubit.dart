@@ -2,7 +2,6 @@ import 'package:auth_firebase/authentication_service/authentication_service.dart
 import 'package:auth_firebase/authentication_service/src/failure/failure.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-
 part 'login_state.dart';
 
 class LoginCubit extends Cubit<LoginState> {

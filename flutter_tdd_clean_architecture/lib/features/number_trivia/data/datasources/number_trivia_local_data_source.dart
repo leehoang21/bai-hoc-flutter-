@@ -5,10 +5,10 @@ import 'package:meta/meta.dart';
 import '../models/number_trivia_model.dart';
 
 abstract class NumberTriviaLocalDataSource {
-  /// Gets the cached [NumberTriviaModel] which was gotten the last time
-  /// the user had an internet connection.
+  /// bị bộ nhớ cache [NumberTriviaModel] đã nhận được lần cuối cùng
+  /// Người dùng đã có kết nối internet.
   ///
-  /// Throws [CacheException] if no cached data is present.
+  /// ném [cacheException] nếu không có dữ liệu được lưu trong bộ nhớ cache.
   Future<NumberTriviaModel> getLastNumberTrivia();
 
   Future<void> cacheNumberTrivia(NumberTriviaModel triviaToCache);
@@ -24,7 +24,7 @@ class NumberTriviaLocalDataSourceImpl implements NumberTriviaLocalDataSource {
   @override
   Future<NumberTriviaModel> getLastNumberTrivia() {
     final jsonString = sharedPreferences.getString(CACHED_NUMBER_TRIVIA);
-    if (jsonString != null) {
+    if (jsonString.isNotEmpty) {
       return Future.value(NumberTriviaModel.fromJson(json.decode(jsonString)));
     } else {
       throw CacheException();

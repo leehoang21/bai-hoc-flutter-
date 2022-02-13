@@ -3,7 +3,7 @@ import 'package:auth_firebase/bloc/app_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
   static MaterialPage page() {
@@ -13,8 +13,15 @@ class Home extends StatelessWidget {
   }
 
   @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
   Widget build(BuildContext context) {
+
     final user = context.select((AppBloc appBloc) => appBloc.state.user);
+    
     return Scaffold(
       body: Center(
         child: Column(

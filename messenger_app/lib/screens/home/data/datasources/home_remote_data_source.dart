@@ -1,0 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
+
+class HomeRemoteLocalDataSource {
+  final FirebaseAuth _firebaseAuth;
+
+  HomeRemoteLocalDataSource(this._firebaseAuth);
+
+  Future<void> signOut() async {
+    await _firebaseAuth.signOut();
+  }
+}

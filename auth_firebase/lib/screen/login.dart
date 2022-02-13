@@ -15,7 +15,7 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<LoginCubit, LoginState>(
       listener: (context, state) {
-        if (state.status == LoginStatus.failure) {
+        if (!(state.errorMessage == null)) {
           ScaffoldMessenger.of(context)
             ..hideCurrentSnackBar()
             ..showSnackBar(
@@ -62,11 +62,13 @@ class LoginView extends StatelessWidget {
                   ),
                   onChanged: context.read<LoginCubit>().onPasswordChanged,
                 ),
+
                 context.read<LoginCubit>().state.status == LoginStatus.loading
                     ? const CircularProgressIndicator()
                     : ElevatedButton(
-                        onPressed:
-                            context.read<LoginCubit>().onLoginWithGooglePressed,
+                        onPressed: context
+                            .read<LoginCubit>()
+                            .onLoginWithEmailAndPasswordPressed,
                         child: const Text("Login"),
                       ),
                 const SizedBox(height: 40),
